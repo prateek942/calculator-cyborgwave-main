@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator - Made By Syam</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading">Calculator</h1>
+        <input class="input" id="input" readonly>
+        <div class="row">
+            <button onclick="clearInput()" id="btn">C</button>
+            <button onclick="toggleSign()" id="btn">+/-</button>
+            <button onclick="backspace()" id="btn">⌫</button>
+            <button onclick="appendToDisplay('/')" id="btn">÷</button>
+        </div>
+        <div class="row">
+            <button onclick="appendToDisplay('7')" id="btn">7</button>
+            <button onclick="appendToDisplay('8')" id="btn">8</button>
+            <button onclick="appendToDisplay('9')" id="btn">9</button>
+            <button onclick="appendToDisplay('*')" id="btn">*</button>
+        </div>
+        <div class="row">
+            <button onclick="appendToDisplay('4')" id="btn">4</button>
+            <button onclick="appendToDisplay('5')" id="btn">5</button>
+            <button onclick="appendToDisplay('6')" id="btn">6</button>
+            <button onclick="appendToDisplay('-')" id="btn">-</button>
+        </div>
+        <div class="row">
+            <button onclick="appendToDisplay('1')" id="btn">1</button>
+            <button onclick="appendToDisplay('2')" id="btn">2</button>
+            <button onclick="appendToDisplay('3')" id="btn">3</button>
+            <button onclick="appendToDisplay('+')" id="btn">+</button>
+        </div>
+        <div class="row">
+            <button onclick="appendToDisplay('0')" id="btn">0</button>
+            <button onclick="appendToDisplay('00')" id="btn">00</button>
+            <button onclick="appendToDisplay('.')" id="btn">.</button>
+            <button onclick="calculate()" id="btn">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
